@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(21, 20, 20);
+}
+div{
+    padding-top: 3em;
+    text-align: center;
+}
+h1{
+    
+    color: bisque;
+  padding-bottom: 1em;
+}
+button{
+    
+    height: 5em;
+    width: 9em;
+    border: none;
+    color: blanchedalmond;
+    border-radius: 5em;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.inicio-btn{
+    background-color: rgb(16, 177, 56);
+}
+.pause-btn{
+    background-color: rgb(80, 80, 80);
+}
+.stop-btn{
+    background-color: rgb(167, 7, 7);
+}
