@@ -5,7 +5,7 @@ var hora=00
 var intervalo
 
 function iniciar(){
-   intervalo= setInterval(contador,1)
+   intervalo= setInterval(contador,1000)
 }
 
 function pausar(){
