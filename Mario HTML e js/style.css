@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.game-board{
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid rgb(2, 124, 25);
+    margin: 0 auto;
+    position: relative;
+    /*Quando o objeto sair do espaco delimitado ele desaparece*/
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+.pipe{
+    /*Faz com que uma imagem nao interfira na outra*/
+    position: absolute;
+    /*Faz com que o elemento fique grudado na parte inferiro*/
+    bottom: 0;
+    /*Define a largura do objeto*/
+    width: 80px;
+    /*Move o objeto para direita*/
+    right: -80px;
+    /* 
+    -80px faz com que a animacao fique mais natural 
+    -80 = largura do elemento
+    */
+
+
+    /*Colisao com o mario
+    left: 120px;
+*/
+    /*Usando animca criada a baixo*/
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+/*Criando uma animacao*/
+@keyframes pipe-animation{
+
+/* Da direita 0 para a direita 100%*/
+from{
+    right: 0;
+}
+to{
+    right: 100%;
+}
+}
+
+.mario{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.jump{
+animation: jump 500ms ease-out;
+
+}
+@keyframes jump {
+0%{
+    bottom: 0;
+}
+40%{
+    bottom: 180px;
+}
+50%{
+    bottom: 180px;
+}
+60%{
+    bottom:180px
+}
+100%{
+    bottom: 0;
+}
+}
+.clouds{
+    width: 550px;
+    position: absolute;
+    animation: clouds-animation 20s infinite linear;
+}
+@keyframes clouds-animation{
+from{
+    right: -550px;
+}to{
+    right: 100%;
+}
+
+}
+.contador{
+  margin-top:30px;
+  text-align: center;
+  font-size: 22px;
+    font-family: 'Press Start 2P', cursive;
+    color: #8d8d8b;
+}
