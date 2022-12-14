@@ -1,0 +1,28 @@
+html,boty{
+    margin: 0;
+    padding: 0;
+    background-color: #192e7b;
+}
+.rodrigo{
+width: 100%;
+text-align: center;
+}
+.botoes{
+    width: 60px;
+    height: 60px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+p{
+    margin-top: 0;
+color: rgb(255, 255, 255);
+}
+.container > div{
+    cursor: pointer;
+}

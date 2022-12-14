@@ -1,11 +1,12 @@
-html,botu{
+html,boty{
     margin: 0;
     padding: 0;
-    background-color: #dbb1bd;
+    background-color: #890c0c;
 }
 .foto-container{
     width: 100%;
     text-align: center;
+ 
 }
 
 .botao{
@@ -24,6 +25,7 @@ text-align: center;
 
 p{
 margin-top: 0;
+color: rgb(231, 224, 224);
 }
 .container > div{
     cursor: pointer;
