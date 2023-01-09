@@ -8,3 +8,9 @@ body{
     /*A imagem background se ajusta ocupando todo o espaco*/
     background-size: cover;
 }
+#container{
+    width: 360px;
+    height: 712px;
+    /*Alinhamento da div para o meio*/
+    margin: auto;
+}
