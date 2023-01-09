@@ -1,0 +1,10 @@
+body{
+    /*Colocar imagem como background */
+    background-image: url(assets/bg-oble.jpg);
+    /* Imagem de background nao se repete*/
+    background-repeat: no-repeat;
+    /*Alinha a imagem background ao centro considerando o topo*/
+    background-position: top center;
+    /*A imagem background se ajusta ocupando todo o espaco*/
+    background-size: cover;
+}
