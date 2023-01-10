@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+    ;
+}
 body{
     /*Colocar imagem como background */
     background-image: url(assets/bg-oble.jpg);
@@ -7,10 +14,35 @@ body{
     background-position: top center;
     /*A imagem background se ajusta ocupando todo o espaco*/
     background-size: cover;
+
+    font-family: 'Inter', sans-serif;
+
+    color: white;
 }
 #container{
+    padding-top: 56px;
     width: 360px;
     height: 712px;
     /*Alinhamento da div para o meio*/
     margin: auto;
+}
+#profile img{
+    /*Quando o  eleemnto nao se alinh com o margin: `auto`, é necessario usar o display block, ele possblita o uso.*/
+    display: block;
+    width: 112px;
+    margin: auto;
+
+    
+
+}
+#profile{
+    /*TEXT*/
+    text-align: center;
+    padding: 24px;
+}
+
+#profile p{
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
 }
