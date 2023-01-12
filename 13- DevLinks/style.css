@@ -2,9 +2,23 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box
-    ;
+    box-sizing: border-box;
+    
 }
+
+:root{
+    --text-color:white;
+    --bg-url:url(assets/bg-oble.jpg);
+    --stroke-color:rgba(255, 255, 255, 0.5);
+    
+}
+.light{
+    --text-color:black;
+    --bg-url:url(assets/br-mobile.jpg);
+    --stroke-color:rgba(0, 0, 0, 0.5);
+}
+
+
 body{
     /*Colocar imagem como background */
     background-image: url(assets/bg-oble.jpg);
@@ -16,8 +30,14 @@ body{
     background-size: cover;
 
     font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
+body{
+    background: var(--bg-url) no-repeat top center/cover;
+}
 
-  
+body *{
+    color: var(--text-color);
 }
 
 .rgbColor{
@@ -72,7 +92,7 @@ padding: 16px 24px ;
 
 
 background:rgba(255, 255, 255, 0.1) ;
-border:1px solid rgba(255, 255, 255, 0.1);
+border:1px solid var(--stroke-color);
 border-radius: 8px;
 
 backdrop-filter: blur(4px);
@@ -87,33 +107,34 @@ transition: background 0.2;
 /*HOUVER FAZ COM QUE AO PASSAR COM O MOUSE POR CIMA OCORRA UMA ACAO */
 ul li a:hover{
     background: rgba(255, 255, 255, 0.1);  
-    border: 1px solid white;
+    border: 1px solid var(--text-color);
 }
 
 #social-links{
     display: flex;
-    gap: 32px;
+   
     justify-content: center;
 
     padding: 24px 0;
 
     font-size: 24px;
-    color: aliceblue;
+    color: var(--text-color);
 }
 #social-links a{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 16px;
+    border-radius: 50%;
 }
 #social-links a:hover{
 background: rgba(255, 255, 255, 0.1);
-padding: 16px;
-border-radius: 50%;
 }
 
-
-
-
+footer{
+    padding: 24px 0;
+    text-align: center;
+}
 
 
 
