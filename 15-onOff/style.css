@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /*Cor de fundo*/ 
+    background-color: #fafafa;
+    /*Centralizando*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    /*Suavizacao da cor de fundo*/
+    transition: background-color 0.2s linear;
+}
+
+body.dark{
+    /*Cor de fundo Quando a funcao é acionada*/
+    background: #292c35;
+}
+
+/*Div do botao*/
+.label{
+    background-color: #111;
+    /*Formato do botao*/
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    /*Elementos fixados*/
+    position: relative;
+    height: 26px;
+    width: 50px;
+}
+.checkbox{
+    position: absolute;
+}
+
+.label .ball{
+background-color: #fff;
+border-radius: 50%;
+/*Permite a sobre posicao de elemetos*/
+position: absolute;
+top: 2px;
+left: 2px;
+height: 22px;
+width: 22px;
+transition: transform 0.2s linear;
+}
+
+/*Animacao da bolinha*/
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+.fa-sun{
+    color: #f39c12;
+}
