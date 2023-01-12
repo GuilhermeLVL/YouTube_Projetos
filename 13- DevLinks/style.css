@@ -17,7 +17,7 @@ body{
 
     font-family: 'Inter', sans-serif;
 
-    color: white;
+    animation: coresRGB  5s linear infinite;
 }
 #container{
     padding-top: 56px;
@@ -52,14 +52,60 @@ body{
 
 ul{
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
-ul li{
-    border: 1px solid red;
-}
+
 
 ul li a{
 display: flex;
 align-items: center;
 justify-content: center;
+
 padding: 16px 24px ;
+
+
+background:rgba(255, 255, 255, 0.1) ;
+border:1px solid rgba(255, 255, 255, 0.1);
+border-radius: 8px;
+
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
+
+text-decoration: none;
+font-weight: 500;
+
+transition: background 0.5; 
 }
+
+/*HOUVER FAZ COM QUE AO PASSAR COM O MOUSE POR CIMA OCORRA UMA ACAO */
+ul li a:hover{
+    background: rgba(255, 255, 255, 0.1);  
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes coresRGB{
+    0% {
+       color: rgb(255, 0, 0);
+    }
+    33% {
+        color: rgb(0, 72, 255);
+      }
+      66% {
+        color: rgb(0, 221, 4);
+      }
+    100% {
+      color: rgb(255, 0, 0);
+    }
+  }
