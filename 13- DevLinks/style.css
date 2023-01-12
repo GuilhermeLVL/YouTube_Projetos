@@ -17,14 +17,17 @@ body{
 
     font-family: 'Inter', sans-serif;
 
-    animation: coresRGB  5s linear infinite;
+  
 }
+
+.rgbColor{
+    animation: coresRGB  5s linear infinite;  
+}
+
 #container{
-    padding-top: 56px;
-    width: 360px;
-    height: 712px;
-    /*Alinhamento da div para o meio*/
-    margin: auto;
+width: 360px;
+margin: 56px auto 0px;
+padding: 0 24px;
 }
 #profile img{
     /*Quando o  eleemnto nao se alinh com o margin: `auto`, é necessario usar o display block, ele possblita o uso.*/
@@ -55,6 +58,8 @@ ul{
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    padding: 24px 0;
 }
 
 
@@ -76,7 +81,7 @@ backdrop-filter: blur(4px);
 text-decoration: none;
 font-weight: 500;
 
-transition: background 0.5; 
+transition: background 0.2; 
 }
 
 /*HOUVER FAZ COM QUE AO PASSAR COM O MOUSE POR CIMA OCORRA UMA ACAO */
@@ -85,8 +90,26 @@ ul li a:hover{
     border: 1px solid white;
 }
 
+#social-links{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
 
+    padding: 24px 0;
 
+    font-size: 24px;
+    color: aliceblue;
+}
+#social-links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#social-links a:hover{
+background: rgba(255, 255, 255, 0.1);
+padding: 16px;
+border-radius: 50%;
+}
 
 
 
