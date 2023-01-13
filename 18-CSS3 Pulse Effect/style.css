@@ -1,0 +1,33 @@
+body{
+    background-color:rgb(29, 29, 29);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    animation: pulse 2s infinite;
+
+    background-color: rgb(255, 211, 13);
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+}
+@keyframes pulse {
+    /*Diminui*/
+    0%{
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 0px rgba(252, 255, 82, 0.7);
+    }
+    /*Almenta*/
+    70%{
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 50px rgba(239, 252, 192, 0);
+    }
+    /*Diminui*/
+    100%{
+transform: scale(0.9);
+    }
+}
