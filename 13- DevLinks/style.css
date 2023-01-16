@@ -87,6 +87,7 @@ padding: 0 24px;
 }
 
 #switch button{
+    cursor: pointer;
   width: 32px;  
   height: 32px;
   background: #fff var(--switch-br-url) no-repeat center;
@@ -186,7 +187,7 @@ footer{
 }
 
 .imag:hover{
-animation: pulse 1s infinite;
+animation: pulse 1.5s ;
 border-radius: 50%;
 }
 
